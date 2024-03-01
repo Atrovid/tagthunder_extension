@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="tagthunder_popup.css" />
+    <link rel="stylesheet" href="toggle-switch.css" />
+  </head>
+
+  <body>
+    <div  id="popup-content">
+      <label id="start-button"><input type="checkbox" id="start-button-checkbox"/></label>
+
+      <div class="option-container">
+        <div class="option__entry">
+          <label class="switch">
+            <input type="checkbox"  id="option__visual-segmentation">
+            <span class="slider round"></span>
+          </label>
+          <h1>visual segmentation</h1>
+        </div>
+        
+      </div>
+
+      <div class="option-container">
+        <div class="option__entry">
+          <label class="switch">
+            <input type="checkbox" id="option__spacial-sound">
+            <span class="slider round"></span>
+          </label>
+          <h1>spacial sound</h1>
+        </div>
+        <!--<ul>
+          <li>
+              <label class="switch">
+                <input type="checkbox" id="option__spacial-sound" checked>
+                <span class="slider round"></span>
+              </label>
+              border sounds
+          </li>
+        </ul>-->
+      </div>
+    </div>
+    <div id="error-content" class="hidden">
+      <p>Can't tagthunderify this web page.</p>
+      <p id="error-message"></p>
+    </div>
+    <script src="tagthunder_popup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+{
+  "manifest_version": 2,
+  "name": "Tag Thunder",
+  "version": "1.0",
+
+  "description": "Adds the Tag Thunder effects. Click the button to activate. The web page's body content is described by a vocal synthesis.",
+  "icons": {
+    "96": "icons/labo_greyc.png"
+  },
+
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "scripting",
+    "webRequest",
+    "*://*/*",
+    "storage"
+  ],
+
+  "browser_action": {
+    "default_icon": "icons/labo_greyc.png",
+    "default_title": "Tag Thunder",
+    "default_popup": "popup/tagthunder_popup.html"
+  },
+
+  "web_accessible_resources": [
+    "./mespeak_config/fr.json",
+    "./mespeak_config/mespeak_config.json"
+  ],
+
+  "browser_specific_settings": {
+    "gecko": {
+        "id": "tagthunder@greyc.fr",
+        "strict_min_version": "42.0"
+    }
+  }
+  
+}

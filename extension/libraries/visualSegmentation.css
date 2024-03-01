@@ -1,0 +1,21 @@
+.tagthunder-zone::before {
+    content: attr(topic);
+    position: absolute;
+    top:0;
+    right:0;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 40px;
+    font-weight: 900;
+    color: rgba(0,0,0,0.5);
+}
+
+.tagthunder-zone {
+    position: relative;
+}
